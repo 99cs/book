@@ -1,3 +1,3 @@
-baseURL = "http://example.org/"
+baseURL = "https://book.99cs.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "99 Controls for Security book"
