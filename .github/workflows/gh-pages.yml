@@ -19,11 +19,11 @@ jobs:
           hugo-version: '0.66.0'
           extended: true
 
-      - name: Deploy
+      - name: Build
         run: hugo -D --theme book -d docs
 
-#      - name: Deploy
-#        uses: peaceiris/actions-gh-pages@v3
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_dir: ./docs
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
