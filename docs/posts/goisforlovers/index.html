@@ -15,10 +15,10 @@ This document is a brief primer on using Go templates." />
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/book.min.829f7602029a29a47bf1b0c9c4bb52982089a6d13558c9433d3c8b7e38c8b3b8.css" integrity="sha256-gp92AgKaKaR78bDJxLtSmCCJptE1WMlDPTyLfjjIs7g=">
+<link rel="stylesheet" href="/book.min.63eb88daa545365405ecdbb21033286a325c60a36cfa6d22d21e7c3bc9286941.css" integrity="sha256-Y&#43;uI2qVFNlQF7NuyEDMoajJcYKNs&#43;m0i0h58O8koaUE=">
 
 
-<script defer src="/en.search.min.a1df4694627fcb954444732fe955f597ac61e5e20029acb77abdf6e6f42cca6e.js" integrity="sha256-od9GlGJ/y5VERHMv6VX1l6xh5eIAKay3er325vQsym4="></script>
+<script defer src="/en.search.min.cf0f0afd252a4387368737be2446555ae6048c371d14374bab11c0812df58eea.js" integrity="sha256-zw8K/SUqQ4c2hze&#43;JEZVWuYEjDcdFDdLqxHAgS31juo="></script>
 
 <!--
 Made with Book Theme
@@ -401,13 +401,19 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-  <p><p>Hugo uses the excellent <a href="https://golang.org/">Go</a> <a href="https://golang.org/pkg/html/template/">html/template</a> library for
+  <p><p>Hugo uses the excellent 
+  <a href="https://golang.org/">Go</a>
+ 
+  <a href="https://golang.org/pkg/html/template/">html/template</a>
+ library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
 logic to be able to create a good static website. If you have used other
 template systems from different languages or frameworks you will find a lot of
 similarities in Go templates.</p>
-<p>This document is a brief primer on using Go templates. The <a href="https://golang.org/pkg/html/template/">Go docs</a>
+<p>This document is a brief primer on using Go templates. The 
+  <a href="https://golang.org/pkg/html/template/">Go docs</a>
+
 provide more details.</p>
 <h2 id="introduction-to-go-templates">Introduction to Go Templates</h2>
 <p>Go templates provide an extremely simple template language. It adheres to the
@@ -415,7 +421,9 @@ belief that only the most basic of logic belongs in the template or view layer.
 One consequence of this simplicity is that Go templates parse very quickly.</p>
 <p>A unique characteristic of Go templates is they are content aware. Variables and
 content will be sanitized depending on the context of where they are used. More
-details can be found in the <a href="https://golang.org/pkg/html/template/">Go docs</a>.</p>
+details can be found in the 
+  <a href="https://golang.org/pkg/html/template/">Go docs</a>
+.</p>
 <h2 id="basic-syntax">Basic Syntax</h2>
 <p>Golang templates are HTML files with the addition of variables and
 functions.</p>
@@ -438,7 +446,9 @@ functions.</p>
 <p>Each Go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
-<a href="/layout/variables">variables</a> page.</p>
+
+  <a href="/layout/variables">variables</a>
+ page.</p>
 <p>A variable is accessed by referencing the variable name.</p>
 <pre><code>&lt;title&gt;{{ .Title }}&lt;/title&gt;
 </code></pre>
@@ -449,8 +459,10 @@ page you are rendering. More details are available on the
 <h2 id="functions">Functions</h2>
 <p>Go template ship with a few functions which provide basic functionality. The Go
 template system also provides a mechanism for applications to extend the
-available functions with their own. <a href="/layout/functions">Hugo template
-functions</a> provide some additional functionality we believe
+available functions with their own. 
+  <a href="/layout/functions">Hugo template
+functions</a>
+ provide some additional functionality we believe
 are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
 functions cannot be added without recompiling hugo.</p>
@@ -580,7 +592,9 @@ type (supported by your front matter/config format) and use them however
 you want to inside of your templates.</p>
 <h2 id="using-content-page-parameters">Using Content (page) Parameters</h2>
 <p>In each piece of content you can provide variables to be used by the
-templates. This happens in the <a href="/content/front-matter">front matter</a>.</p>
+templates. This happens in the 
+  <a href="/content/front-matter">front matter</a>
+.</p>
 <p>An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
 doesn&rsquo;t make a lot of sense. We&rsquo;ve defined a variable in our front matter
@@ -650,7 +664,7 @@ so, such as in this example:</p>
 </div>
 
  
-          
+        
       </footer>
 
       
