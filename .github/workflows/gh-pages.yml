@@ -17,7 +17,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.66.0'
-          # extended: true
+          extended: true
 
       - name: Deploy
         run: hugo -D --theme book -d docs
