@@ -19,7 +19,7 @@ jobs:
           hugo-version: '0.62.2'
           # extended: true
 
-      - name: Build
+      - name: Deploy
         run: hugo -D --theme book -d docs
 
 #      - name: Deploy
